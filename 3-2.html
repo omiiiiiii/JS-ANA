@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+            <label for="string">Enter a String </label>
+            <input type="text" id="e-string" name="Enter-a-String" required><br>
+            <label for="Enter-char">Enter Char </label>
+            <input type="text" id="Enter-char" name="Enter-char" required><br>
+            <button onclick="getResult()">Give Input</button>
+<div>
+    <p id="l-s"></p>
+    <p id="f-o"></p>
+    <p id="l-o"></p>
+
+</div>
+<script>
+function getResult() {
+  let estring = document.getElementById("e-string").value;
+  let eChar = document.getElementById("Enter-char").value;
+
+  document.getElementById("l-s").innerText ="length of String"+ estring.length;
+  document.getElementById("f-o").innerText ="First occurance index is" + estring.indexOf(eChar);
+  document.getElementById("l-o").innerText ="last occurance index is" + estring.lastIndexOf(eChar);
+
+}
+</script>
+
+</body>
+</html>

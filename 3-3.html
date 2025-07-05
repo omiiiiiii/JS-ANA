@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+            <label for="string">Enter FirstName </label>
+            <input type="text" id="firstName" name="firstName" required><br>
+            <label for="Enter-char">Enter lastName </label>
+            <input type="text" id="lastName" name="lastName" required><br>
+            <button onclick="getResult()">Give Input</button>
+<div>
+    <p id="f-n"></p>
+</div>
+<script>
+function getResult() {
+  let fn = document.getElementById("firstName").value;
+  let ln = document.getElementById("lastName").value;
+
+  document.getElementById("f-n").innerText =fn +" "+ln;
+
+}
+</script>
+
+</body>
+</html>
