@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <label for="fact-num">Provide number </label>
+    <input type="text" id="fact-num" name="fact-num" required><br>
+    <button onclick="getFactorial()">Calculate Factorial</button>
+
+
+
+
+    <script>
+        function getFactorial() {
+            let Num = document.getElementById("fact-num").value;
+            let result = 1;
+            for (let i = 1; i <= Num; i++) {
+                result*= i;
+            }
+            alert(result)
+        }
+    </script>
+
+</body>
+
+</html>

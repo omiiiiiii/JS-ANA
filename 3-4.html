@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <button onclick="myFunction()">Show Object</button>
+    <div>
+        <p id="id"></p>
+        <p id="brand"></p>
+        <p id="Price"></p>
+        <p id="Processer"></p>
+
+    </div>
+
+
+
+    <script>
+        function myFunction() {
+            let laptop = {
+                id: 231,
+                brand: "Dell",
+                Price: 14136,
+                Processer: "I-9 11th Gen"
+            }
+            document.getElementById("id").innerText = laptop.id;
+            document.getElementById("brand").innerText = laptop.brand;
+            document.getElementById("Price").innerText = laptop.Price;
+            document.getElementById("Processer").innerText = laptop.Processer;
+
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+            <label for="Principle-Amount">Principle Amount </label>
+            <input type="text" id="Principle-Amount" name="Principle-Amount" required><br>
+            <label for="crush-name">Time </label>
+            <input type="text" id="Time" name="Time" required><br>
+            <label for="crush-name">Rate of Interest </label>
+            <input type="Rate" id="Rate" name="Rate" required><br>
+            <button onclick="getSI()">Give Input</button>
+
+<script>
+function getSI() {
+  let pA = document.getElementById("Principle-Amount").value;
+  let time = document.getElementById("Time").value;
+  let rate = document.getElementById("Rate").value;
+
+let result = (pA * time * rate) / 100;
+
+alert(result)
+}
+</script>
+
+</body>
+</html>
